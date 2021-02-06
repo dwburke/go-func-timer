@@ -12,7 +12,7 @@ Copied example:
 
 ```
 func factorial(n *big.Int) (result *big.Int) {
-    defer timeTrack(time.Now(), "factorial")
+    defer exectimer.Track(time.Now(), "factorial")
     // ... do some things, maybe even return under some condition
     return n
 }
